@@ -1,0 +1,74 @@
+{
+  "src/lib/components/Vega.react.js": {
+    "description": "\u5728src/lib/fragments/Vega.react.js\u6587\u4ef6\u4fee\u6539",
+    "displayName": "Vega",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "spec": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "width": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"100%\"",
+          "computed": false
+        }
+      },
+      "height": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "\"400px\"",
+          "computed": false
+        }
+      },
+      "clickData": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "hoverData": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

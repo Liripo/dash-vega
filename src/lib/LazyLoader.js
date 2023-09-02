@@ -1,0 +1,1 @@
+export const Vega = React.lazy(() => import(/* webpackChunkName: "Vega" */ './fragments/Vega.react'));

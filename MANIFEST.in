@@ -1,0 +1,11 @@
+include dash_vega/dash_vega.min.js
+include dash_vega/dash_vega.min.js.map
+include dash_vega/async-*.js
+include dash_vega/async-*.js.map
+include dash_vega/*-shared.js
+include dash_vega/*-shared.js.map
+include dash_vega/metadata.json
+include dash_vega/package-info.json
+include README.md
+include LICENSE
+include package.json
