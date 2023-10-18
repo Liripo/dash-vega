@@ -21,10 +21,12 @@ export default class Vega extends Component {
         vegaEmbed(this.el.current,this.props.spec).then(function(result) {
             var view = result.view;
             view.addEventListener('click', function(event, item) {
-                setProps({clickData: item.datum});
+                if (item !== undefined) {
+                    setProps({clickData: item.datum});
+                }
             });
             view.addEventListener('mouseover',function(event,item) {
-                if (item !== null) {
+                if (item !== undefined) {
                     setProps({hoverData: item.datum});
                 }
             });
@@ -51,7 +53,7 @@ export default class Vega extends Component {
 
     render() {
         const {id,width,height} = this.props;
-
+        console.log("render");
         return (
             <div id={id} ref = {this.el} style={{width: width,height: height}}>
             </div>
